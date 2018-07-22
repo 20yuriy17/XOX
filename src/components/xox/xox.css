@@ -1,0 +1,54 @@
+
+
+
+.Main .Cover   {
+
+    width: 315px;
+    background-color: #003399;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 40px;
+
+
+}
+
+
+.bb  {
+
+    list-style-type: none;
+    height: 100px;
+    width: 100px;
+    border: solid 2px;
+    background-color: rgba(130, 255, 112, 0.5);
+    font-size: 100px;
+    text-align: center;
+
+}
+.bb:hover {
+    background-color: #fff941;
+    transition: background-color 0.5s ease-out;
+
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    /*transform: translate3d(0, 0, 0);*/
+    /*backface-visibility: hidden;*/
+    /*perspective: 1000px;*/
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
